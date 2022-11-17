@@ -1,0 +1,16 @@
+<div class="container">
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let player of OnceIniciales">
+                <td><img class="icon" src="{{player.image}}" alt="{{player.name}}"></td>
+                <td style="font-weight: bold;">{{player.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

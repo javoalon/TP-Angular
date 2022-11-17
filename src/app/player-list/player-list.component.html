@@ -1,0 +1,24 @@
+<table class="table table-info text-center">
+    <thead class="table-dark">
+        <tr>
+            <th>N°</th>
+            <th></th>
+            <th>Nombre</th>
+            <th>Posicion</th>
+            <th>Equipo</th>
+            <th>Liga</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let player of players">
+            <td><span class="badge rounded-pill bg-dark">{{player.number}}</span></td>
+            <td><img class="icon" src="{{player.image}}" alt="{{player.name}}"></td>
+            <td>{{player.name}}</td>
+            <td>{{player.position}}</td>
+            <td>{{player.team}}</td>
+            <td>{{player.league}}</td>
+            <td><button class="btn btn-primary btn-sm" (click)="addToTeam(player)">Agregar al 11</button></td>
+        </tr>
+    </tbody>
+</table>
