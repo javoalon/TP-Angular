@@ -14,6 +14,7 @@ export class PlayerListComponent implements OnInit {
         "team": "River Plate",
         "league": "LPF",
         "number": 1,
+        "inTeam": false,
     }, {
         "image": "assets/img/juan-foyth.jpg",
         "name": "Juan Foyth",
@@ -21,6 +22,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Villareal C.F",
         "league": "LaLiga",
         "number": 2,
+        "inTeam": false,
     }, {
         "image": "assets/img/nicolas-tagliafico.jpg",
         "name": "Nicolás Tagliafico",
@@ -28,6 +30,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Olympique de Lyon",
         "league": "Ligue 1",
         "number": 3,
+        "inTeam": false,
     }, {
         "image": "assets/img/gonzalo-montiel.jpg",
         "name": "Gonzalo Montiel",
@@ -35,6 +38,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Sevilla",
         "league": "LaLiga",
         "number": 4,
+        "inTeam": false,
     }, {
         "image": "assets/img/leandro-paredes.jpg",
         "name": "Leandro Paredes",
@@ -42,6 +46,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Juventus",
         "league": "Serie A",
         "number": 5,
+        "inTeam": false,
     }, {
         "image": "assets/img/german-pezzella.jpg",
         "name": "German Pezzella",
@@ -49,6 +54,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Real Betis",
         "league": "LaLiga",
         "number": 6,
+        "inTeam": false,
     },{
         "image": "assets/img/rodrigo-depaul.jpg",
         "name": "Rodrigo de Paul",
@@ -56,6 +62,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Atletico de Madrid",
         "league": "LaLiga",
         "number": 7,
+        "inTeam": false,
     },{
         "image": "assets/img/marcos-acuna.jpg",
         "name": "Marcos Acuña",
@@ -63,6 +70,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Sevilla",
         "league": "LaLiga",
         "number": 8,
+        "inTeam": false,
     }, {
         "image": "assets/img/julian-alvarez.jpg",
         "name": "Julian Alvarez",
@@ -70,13 +78,15 @@ export class PlayerListComponent implements OnInit {
         "team": "Manchester City",
         "league": "Premier League",
         "number": 9,
+        "inTeam": false,
     },{
         "image": "assets/img/lionel-messi.jpg",
         "name": "Lionel Messi",
         "position": "Delantero",
         "team": "PSG",
         "league": "Ligue 1",
-        "number": 10
+        "number": 10,
+        "inTeam": false,
     },{
         "image": "assets/img/angel-dimaria.jpg",
         "name": "Angel Di Maria",
@@ -84,6 +94,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Juventus",
         "league": "Serie A",
         "number": 11,
+        "inTeam": false,
     }, {
         "image": "assets/img/geronimo-rulli.jpg",
         "name": "Geronimo Rulli",
@@ -91,6 +102,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Villareal",
         "league": "LaLiga",
         "number": 12,
+        "inTeam": false,
     }, {
         "image": "assets/img/cristian-romero.jpg",
         "name": "Cristian Romero",
@@ -98,6 +110,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Tottenham",
         "league": "Premier League",
         "number": 13,
+        "inTeam": false,
     }, {
         "image": "assets/img/exequiel-palacios.jpg",
         "name": "Exequiel Palacios",
@@ -105,6 +118,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Leverkusen",
         "league": "Bundesliga",
         "number": 14,
+        "inTeam": false,
     }, {
         "image": "assets/img/nicolas-gonzalez.jpg",
         "name": "Nicolas Gonzalez",
@@ -112,6 +126,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Fiorentina",
         "league": "Serie A",
         "number": 15,
+        "inTeam": false,
     }, {
         "image": "assets/img/joaquin-correa.jpg",
         "name": "Joaquin Correa",
@@ -119,6 +134,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Inter Milan",
         "league": "Serie A",
         "number": 16,
+        "inTeam": false,
     }, {
         "image": "assets/img/alejandro-gomez.jpg",
         "name": "Alejandro Gomez",
@@ -126,6 +142,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Sevilla",
         "league": "LaLiga",
         "number": 17,
+        "inTeam": false,
     }, {
         "image": "assets/img/guido-rodriguez.jpg",
         "name": "Guido Rodriguez",
@@ -133,6 +150,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Real Betis",
         "league": "LaLiga",
         "number": 18,
+        "inTeam": false,
     }, {
         "image": "assets/img/nicolas-otamendi.jpg",
         "name": "Nicolas Otamendi",
@@ -140,6 +158,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Benfica",
         "league": "Primeira Liga",
         "number": 19,
+        "inTeam": false,
     }, {
         "image": "assets/img/alexis-macallister.jpg",
         "name": "Alexis Mac Aliister",
@@ -147,6 +166,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Brighton",
         "league": "Premier League",
         "number": 20,
+        "inTeam": false,
     }, {
         "image": "assets/img/paulo-dybala.jpg",
         "name": "Paulo Dybala",
@@ -154,6 +174,7 @@ export class PlayerListComponent implements OnInit {
         "team": "AS Roma",
         "league": "Serie A",
         "number": 21,
+        "inTeam": false,
     }, {
         "image": "assets/img/lautaro-martinez.jpg",
         "name": "Lautaro Martinez",
@@ -161,6 +182,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Inter Milan",
         "league": "Serie A",
         "number": 22,
+        "inTeam": false,
     },{
         "image": "assets/img/emiliano-martinez.jpg",
         "name": "Emiliano Martinez",
@@ -168,6 +190,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Aston Villa",
         "league": "Premier League",
         "number": 23,
+        "inTeam": false,
     },{
         "image": "assets/img/enzo-fernandez.jpg",
         "name": "Enzo Fernandez",
@@ -175,6 +198,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Benfica",
         "league": "Primeira Liga",
         "number": 24,
+        "inTeam": false,
     }, {
         "image": "assets/img/lisandro-martinez.jpg",
         "name": "Lisandro Martinez",
@@ -182,6 +206,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Manchester United",
         "league": "Premier League",
         "number": 25,
+        "inTeam": false,
     }, {
         "image": "assets/img/nahuel-molina.jpg",
         "name": "Nahuel Molina",
@@ -189,6 +214,7 @@ export class PlayerListComponent implements OnInit {
         "team": "Atletico Madrid",
         "league": "LaLiga",
         "number": 26,
+        "inTeam": false,
     }];
     constructor(private once: OnceInicialService) {}
 

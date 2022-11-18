@@ -1,4 +1,4 @@
-<table class="table table-info text-center">
+<table class="table text-center">
     <thead class="table-dark">
         <tr>
             <th>N°</th>
@@ -11,7 +11,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let player of players">
+        <tr *ngFor="let player of players" [ngClass]="{'enElOnce': player.inTeam}">
             <td><span class="badge rounded-pill bg-dark">{{player.number}}</span></td>
             <td><img class="icon" src="{{player.image}}" alt="{{player.name}}"></td>
             <td>{{player.name}}</td>

@@ -5,4 +5,5 @@ export interface Player {
     team: string;
     league: string;
     number: number;
+    inTeam: boolean;
 }

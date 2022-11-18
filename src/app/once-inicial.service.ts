@@ -6,52 +6,60 @@ import { Player } from './player-list/Player';
     providedIn: 'root'
 })
 export class OnceInicialService {
-    private _OnceIniciales: Player[]=[];
-    OnceIniciales: BehaviorSubject<Player[]>= new BehaviorSubject(this._OnceIniciales);
-    constructor() {}
+    private _OnceIniciales: Player[] = [];
+    OnceIniciales: BehaviorSubject<Player[]> = new BehaviorSubject(this._OnceIniciales);
+    constructor() { }
     addToEleven(player: Player) {
         let defensores = 0;
         let mediocampistas = 0;
         let delanteros = 0;
-        let item = this._OnceIniciales.find((v1) => v1.name == player.name);
+        let item = this._OnceIniciales.find((v1) => v1.name == player.name); //se fija si existe ya ese jugador dentro del arreglo de los 11
         if (!item) {
             switch (player.position) {
                 case "Arquero":
-                    if (!this._OnceIniciales.find((v1) => v1.position == player.position)){
+                    if (!this._OnceIniciales.find((v1) => v1.position == player.position)) {
                         this._OnceIniciales.push(player);
+                        player.inTeam = true;
                     }
                     break;
                 case "Defensor":
                     this._OnceIniciales.forEach(player => {
-                        if(player.position=="Defensor")
+                        if (player.position == "Defensor")
                             defensores++;
                     });
-                    if(defensores<4)
+                    if (defensores < 4){
                         this._OnceIniciales.push(player);
+                        player.inTeam = true;
+                    }
                     break;
                 case "Mediocampista":
                     this._OnceIniciales.forEach(player => {
-                        if(player.position=="Mediocampista")
+                        if (player.position == "Mediocampista")
                             mediocampistas++;
                     });
-                    if(mediocampistas<3)
+                    if (mediocampistas < 3){
                         this._OnceIniciales.push(player);
+                        player.inTeam = true;
+                    }
                     break;
                 case "Delantero":
                     this._OnceIniciales.forEach(player => {
-                        if(player.position=="Delantero")
+                        if (player.position == "Delantero")
                             delanteros++;
                     });
-                    if(delanteros<3)
-                        this._OnceIniciales.push(player);
+                    if (delanteros < 3){
+                        this._OnceIniciales.push(player)
+                        player.inTeam = true;
+                    }
                     break;
             }
         }
     }
-    deleteFromEleven(playerToDelete:Player){
+    deleteFromEleven(playerToDelete: Player) {
         const indexOfObject = this._OnceIniciales.findIndex(player => {
             return player.number === playerToDelete.number;
-          });
-          this._OnceIniciales.splice(indexOfObject, 1);
+        });
+        this._OnceIniciales.splice(indexOfObject, 1);
+        playerToDelete.inTeam=false;
     }
 }
