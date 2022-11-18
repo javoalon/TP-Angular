@@ -3,20 +3,13 @@
     <a class="navbar-brand" href="#"><img src="../assets/img/afa-logo.png" alt="afa-logo afa" width="32"></a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link text-white" href="#">CREA TU ONCE INICIAL IDEAL!</a>
-        <a class="nav-link text-white" href="#">ARGENTINA EN QATAR!</a>
+        <a class="nav-link text-white" [routerLink]="['/argentina']">CREA TU ONCE INICIAL IDEAL!</a>
+        <a class="nav-link text-white" [routerLink]="['/partidos']">ARGENTINA EN QATAR!</a>
       </div>
     </div>
   </div>
 </nav>
 <div class="container">
-  <div class="row">
-    <div class="col-8">
-      <app-player-list></app-player-list>
-    </div>
-    <div class="col-4">
-      <app-once-inicial></app-once-inicial>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </div>
 <footer>Seleccion Argentina 2022</footer>
