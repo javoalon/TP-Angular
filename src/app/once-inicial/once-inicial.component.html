@@ -3,13 +3,15 @@
         <thead>
             <tr>
                 <th></th>
-                <th>Nombre</th>
+                <th>ONCE INICIAL</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let player of OnceIniciales">
                 <td><img class="icon" src="{{player.image}}" alt="{{player.name}}"></td>
                 <td style="font-weight: bold;">{{player.name}}</td>
+                <button class="btnSacarOnce" (click)="deleteFromEleven(player)">X</button>
             </tr>
         </tbody>
     </table>

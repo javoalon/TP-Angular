@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { OnceInicialService } from '../once-inicial.service';
 import { Player } from '../player-list/Player';
 
@@ -12,7 +12,9 @@ export class OnceInicialComponent implements OnInit {
 	constructor(private once: OnceInicialService) {
 		once.OnceIniciales.subscribe(p=>this.OnceIniciales=p);
 	}
-
 	ngOnInit(): void {
 	}
+	deleteFromEleven(player: Player): void {
+		this.once.deleteFromEleven(player);
+    }
 }

@@ -8,27 +8,6 @@ import { Player } from './Player';
 })
 export class PlayerListComponent implements OnInit {
     players: Player[] = [{
-        "image": "assets/img/lionel-messi.jpg",
-        "name": "Lionel Messi",
-        "position": "Delantero",
-        "team": "PSG",
-        "league": "Ligue 1",
-        "number": 10
-    }, {
-        "image": "assets/img/rodrigo-depaul.jpg",
-        "name": "Rodrigo de Paul",
-        "position": "Mediocampista",
-        "team": "Atletico de Madrid",
-        "league": "LaLiga",
-        "number": 7,
-    }, {
-        "image": "assets/img/emiliano-martinez.jpg",
-        "name": "Emiliano Martinez",
-        "position": "Arquero",
-        "team": "Aston Villa",
-        "league": "Premier League",
-        "number": 23,
-    }, {
         "image": "assets/img/franco-armani.jpg",
         "name": "Franco Armani",
         "position": "Arquero",
@@ -70,7 +49,14 @@ export class PlayerListComponent implements OnInit {
         "team": "Real Betis",
         "league": "LaLiga",
         "number": 6,
-    }, {
+    },{
+        "image": "assets/img/rodrigo-depaul.jpg",
+        "name": "Rodrigo de Paul",
+        "position": "Mediocampista",
+        "team": "Atletico de Madrid",
+        "league": "LaLiga",
+        "number": 7,
+    },{
         "image": "assets/img/marcos-acuna.jpg",
         "name": "Marcos Acuña",
         "position": "Defensor",
@@ -84,7 +70,14 @@ export class PlayerListComponent implements OnInit {
         "team": "Manchester City",
         "league": "Premier League",
         "number": 9,
-    }, {
+    },{
+        "image": "assets/img/lionel-messi.jpg",
+        "name": "Lionel Messi",
+        "position": "Delantero",
+        "team": "PSG",
+        "league": "Ligue 1",
+        "number": 10
+    },{
         "image": "assets/img/angel-dimaria.jpg",
         "name": "Angel Di Maria",
         "position": "Delantero",
@@ -168,7 +161,14 @@ export class PlayerListComponent implements OnInit {
         "team": "Inter Milan",
         "league": "Serie A",
         "number": 22,
-    }, {
+    },{
+        "image": "assets/img/emiliano-martinez.jpg",
+        "name": "Emiliano Martinez",
+        "position": "Arquero",
+        "team": "Aston Villa",
+        "league": "Premier League",
+        "number": 23,
+    },{
         "image": "assets/img/enzo-fernandez.jpg",
         "name": "Enzo Fernandez",
         "position": "Mediocampista",

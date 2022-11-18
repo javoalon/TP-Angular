@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, from } from 'rxjs';
 import { Player } from './player-list/Player';
 
 @Injectable({
@@ -8,7 +8,7 @@ import { Player } from './player-list/Player';
 export class OnceInicialService {
     private _OnceIniciales: Player[]=[];
     OnceIniciales: BehaviorSubject<Player[]>= new BehaviorSubject(this._OnceIniciales);
-    constructor() { }
+    constructor() {}
     addToEleven(player: Player) {
         let defensores = 0;
         let mediocampistas = 0;
@@ -47,5 +47,11 @@ export class OnceInicialService {
                     break;
             }
         }
+    }
+    deleteFromEleven(playerToDelete:Player){
+        const indexOfObject = this._OnceIniciales.findIndex(player => {
+            return player.number === playerToDelete.number;
+          });
+          this._OnceIniciales.splice(indexOfObject, 1);
     }
 }
