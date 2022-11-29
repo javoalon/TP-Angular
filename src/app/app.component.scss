@@ -3,4 +3,16 @@ footer{
     background-color: black;
     padding-top: 15px;
     color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+nav{
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+.container{
+    margin-top: 105px;
+    margin-bottom: 45px;
 }
