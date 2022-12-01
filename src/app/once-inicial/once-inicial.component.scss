@@ -1,40 +1,40 @@
 .container {
-    background-image: url(../../assets/img/cancha-futbol.jpg);
-    min-height: 600px;
-    max-width: 338px;
-    border: 2px solid green;
-    border-radius: 4%;
+  background-image: url(https://raw.githubusercontent.com/javoalon/TP-Angular/master/src/assets/img/cancha-futbol.jpg);
+  min-height: 600px;
+  max-width: 338px;
+  border: 2px solid green;
+  border-radius: 4%;
 }
 
 .icon {
-    width: 32px;
-    border-radius: 100%;
+  width: 32px;
+  border-radius: 100%;
 }
 
 .btnSacarOnce {
-    background: #fa1b1b;
-    font-family: inherit;
-    font-weight: 800;
-    font-size: 11px;
-    border: 3px solid black;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    height: 25px;
-    display: flex;
-    align-items: center;
+  background: #fa1b1b;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 11px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  height: 25px;
+  display: flex;
+  align-items: center;
 }
-tr{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btnSacarOnce:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
 }
 
 .btnSacarOnce:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em;
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }
