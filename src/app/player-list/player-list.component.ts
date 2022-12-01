@@ -8,7 +8,7 @@ import { Player } from './Player';
 })
 export class PlayerListComponent implements OnInit {
     players: Player[] = [{
-        "image": "assets/img/franco-armani.jpg",
+        "image": "franco-armani.jpg",
         "name": "Franco Armani",
         "position": "Arquero",
         "team": "River Plate",
@@ -16,7 +16,7 @@ export class PlayerListComponent implements OnInit {
         "number": 1,
         "inTeam": false,
     }, {
-        "image": "assets/img/juan-foyth.jpg",
+        "image": "juan-foyth.jpg",
         "name": "Juan Foyth",
         "position": "Defensor",
         "team": "Villareal C.F",
